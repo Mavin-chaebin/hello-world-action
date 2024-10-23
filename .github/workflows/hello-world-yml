@@ -1,0 +1,26 @@
+name: Hello World Workflow
+
+# 워크플로우가 실행되는 트리거를 설정합니다 (push, pull request 등)
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# 실행할 작업(Job)을 정의합니다
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 체크아웃: 리포지토리의 코드를 가져옵니다
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # hello-world.sh 스크립트 실행
+      - name: Run Hello World script
+        run: |
+          chmod +x hello-world.sh
+          ./hello-world.sh
