@@ -24,3 +24,8 @@ jobs:
         run: |
           chmod +x hello-world.sh
           ./hello-world.sh
+      # mavin-world.sh 스크립트 실행
+      - name: Run Mavin World script
+        run: |
+          chmod +x mavin-world.sh
+          ./mavin-world.sh
