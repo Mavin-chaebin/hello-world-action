@@ -1,0 +1,14 @@
+name: file tree
+on:
+    workflow_dispatch:
+
+jobs:
+    file-tree:
+        runs-on: self-hosted
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+            - name: Run file tree script
+              run: |
+                  chmod +x file-tree.sh
+                  ./file-tree.sh

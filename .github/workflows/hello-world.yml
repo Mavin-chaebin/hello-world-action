@@ -12,7 +12,8 @@ on:
 # 실행할 작업(Job)을 정의합니다
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       # 체크아웃: 리포지토리의 코드를 가져옵니다
