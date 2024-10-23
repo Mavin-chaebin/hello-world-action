@@ -12,3 +12,8 @@ jobs:
               run: |
                   chmod +x file-tree.sh
                   ./file-tree.sh
+
+            - name: Run Mavin World script
+              run: |
+                chmod +x mavin-world.sh
+                ./mavin-world.sh
