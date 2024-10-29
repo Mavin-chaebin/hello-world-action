@@ -1,6 +1,6 @@
 name: file tree
 on:
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
     file-tree:
